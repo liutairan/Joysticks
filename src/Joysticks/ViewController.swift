@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate, StreamDelegate {
     let aux4Mode1Label = UILabel(frame: CGRect(x: 100, y: 550, width: 60, height: 30))
     let aux4Mode2Label = UILabel(frame: CGRect(x: 170, y: 550, width: 60, height: 30))
     let aux4Mode3Label = UILabel(frame: CGRect(x: 240, y: 550, width: 60, height: 30))
-    let aux4Mode4Label = UILabel(frame: CGRect(x: 310, y: 550, width: 60, height: 30))
+    let aux4Mode4Label = UILabel(frame: CGRect(x: 320, y: 550, width: 60, height: 30))
 
     var inputStream: InputStream!
     var outputStream: OutputStream!
@@ -113,7 +113,7 @@ class ViewController: UIViewController, UITextFieldDelegate, StreamDelegate {
         self.view.addSubview(aux4Mode2Label)
         aux4Mode3Label.text = "HOLD"
         self.view.addSubview(aux4Mode3Label)
-        aux4Mode4Label.text = "OPERATE"
+        aux4Mode4Label.text = "FN"
         self.view.addSubview(aux4Mode4Label)
         
         aux4Mode0Button.addTarget(self, action: #selector(manualAction0(sender:)), for: .touchUpInside)
